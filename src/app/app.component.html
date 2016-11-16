@@ -1,0 +1,11 @@
+<h1>
+  Shows countries with population over:
+</h1>
+
+<input type="number" (keyup)="onPopulationChange($event.target.value)"/>
+<ul>
+    <li *ngFor="let country of countries">
+        {{ country.name }}
+    </li>
+
+</ul>
